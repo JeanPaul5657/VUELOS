@@ -11,7 +11,7 @@ public class Vuelo {
         this.horaSalida = horaSalida;
         this.tarifa = tarifa;
     }
-    //Metodo para el id del vuelo
+    //Metodo para el numero del vuelo
     public String getnumerodeVuelo() {
 
         return numeroVuelo;

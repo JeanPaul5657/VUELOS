@@ -1,18 +1,18 @@
 public class Reserva {
 
-        public String idReserva;
-        public Usuario usuario;
-        public Vuelo vuelo;
+        private String numeroReserva;
+        private Usuario usuario;
+        private Vuelo vuelo;
 
 
         public Reserva(String idReserva, Usuario usuario, Vuelo vuelo) {
-            this.idReserva = idReserva;
+            this.numeroReserva = idReserva;
             this.usuario = usuario;
             this.vuelo = vuelo;
         }
 
         public String getIdReserva() {
-            return idReserva;
+            return numeroReserva;
         }
 
         public Usuario getUsuario() {
@@ -25,7 +25,7 @@ public class Reserva {
 
         public void confirmarReserva() {
             System.out.println("Reserva confirmada:");
-            System.out.println("ID Reserva: " + idReserva);
+            System.out.println("ID Reserva: " + numeroReserva);
             System.out.println("Pasajero: " + usuario.getNombre());
             System.out.println("Vuelo: " + vuelo.getnumerodeVuelo());
         }

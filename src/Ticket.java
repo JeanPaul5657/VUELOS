@@ -1,14 +1,14 @@
 public class Ticket {
-        public String idTicket;
+        public String numeroTicket;
         public Reserva reserva;
 
         public  Ticket(String idTicket, Reserva reserva) {
-            this.idTicket = idTicket;
+            this.numeroTicket = idTicket;
             this.reserva = reserva;
         }
 
-        public String getIdTicket() {
-            return idTicket;
+        public String getnumeroTicket() {
+            return numeroTicket;
         }
 
         public Reserva getReserva() {
@@ -17,7 +17,7 @@ public class Ticket {
         // Metodo para generar el ticket
         public void generarTicket() {
             System.out.println("Ticket generado:");
-            System.out.println("ID ticket: " + idTicket);
+            System.out.println("ID ticket: " + numeroTicket);
             System.out.println("Nombre del pasajero: " + reserva.getUsuario().getNombre());
             System.out.println("Vuelo: " + reserva.getVuelo().getnumerodeVuelo());
             System.out.println("Origen: " + reserva.getVuelo().getOrigen());
